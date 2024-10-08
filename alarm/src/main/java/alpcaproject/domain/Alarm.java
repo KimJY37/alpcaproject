@@ -24,6 +24,8 @@ public class Alarm {
 
     private String moveStatus;
 
+    private String moveId;
+
     public static AlarmRepository repository() {
         AlarmRepository alarmRepository = AlarmApplication.applicationContext.getBean(
             AlarmRepository.class

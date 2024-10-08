@@ -45,6 +45,7 @@
                             
                             
                             
+                            
                         </v-list-item-title>
 
                         <v-list-item-subtitle style="font-size:25px; font-weight:700;">
@@ -53,6 +54,7 @@
                             [ FamilyId :  {{data.familyId }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             [ Content :  {{data.content }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             [ MoveStatus :  {{data.moveStatus }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            [ MoveId :  {{data.moveId }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         </v-list-item-subtitle>
 
                     </v-list-item-content>
@@ -125,6 +127,7 @@
                 'familyId': '',
                 'content': '',
                 'moveStatus': '',
+                'moveId': '',
             }
         },
         methods: {
