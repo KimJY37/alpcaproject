@@ -82,6 +82,17 @@
 
 
 
+                    <v-list-item
+                        class="px-2"
+                        key="locations"
+                        to="/locations/locations"
+                        @click="changeUrl()"
+                        color="primary"
+                        style="font-weight:700;"
+                    >
+                        Location
+                    </v-list-item>
+
 
                 </v-list>
             </v-navigation-drawer>
@@ -187,6 +198,13 @@ export default {
                 description: '', 
                 key: '', 
                 route: '//',
+                ImageUrl: '',
+            },
+            { 
+                title: 'Location', 
+                description: '', 
+                key: 'locations', 
+                route: '/locations/locations',
                 ImageUrl: '',
             },
             

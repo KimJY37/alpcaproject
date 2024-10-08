@@ -44,21 +44,13 @@
                             
                             
                             
-                            
-                            
-                            
-                            
                         </v-list-item-title>
 
                         <v-list-item-subtitle style="font-size:25px; font-weight:700;">
                             [ LocId :  {{data.locId }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             [ CustomerId :  {{data.customerId }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            [ FamilyId :  {{data.familyId }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            [ Loc1 :  {{data.loc1 }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            [ Loc2 :  {{data.loc2 }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            [ Loc3 :  {{data.loc3 }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            [ Loc4 :  {{data.loc4 }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            [ Loc5 :  {{data.loc5 }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            [ LocX :  {{data.locX }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            [ LocY :  {{data.locY }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         </v-list-item-subtitle>
 
                     </v-list-item-content>
@@ -128,12 +120,8 @@
             this.newValue = {
                 'locId': '',
                 'customerId': '',
-                'familyId': '',
-                'loc1': '',
-                'loc2': '',
-                'loc3': '',
-                'loc4': '',
-                'loc5': '',
+                'locX': 0,
+                'locY': 0,
             }
         },
         methods: {

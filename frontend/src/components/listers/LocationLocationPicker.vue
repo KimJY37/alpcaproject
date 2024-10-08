@@ -21,22 +21,10 @@
                                 CustomerId :  {{item.customerId }}
                             </v-list-item-subtitle>
                             <v-list-item-subtitle>
-                                FamilyId :  {{item.familyId }}
+                                LocX :  {{item.locX }}
                             </v-list-item-subtitle>
                             <v-list-item-subtitle>
-                                Loc1 :  {{item.loc1 }}
-                            </v-list-item-subtitle>
-                            <v-list-item-subtitle>
-                                Loc2 :  {{item.loc2 }}
-                            </v-list-item-subtitle>
-                            <v-list-item-subtitle>
-                                Loc3 :  {{item.loc3 }}
-                            </v-list-item-subtitle>
-                            <v-list-item-subtitle>
-                                Loc4 :  {{item.loc4 }}
-                            </v-list-item-subtitle>
-                            <v-list-item-subtitle>
-                                Loc5 :  {{item.loc5 }}
+                                LocY :  {{item.locY }}
                             </v-list-item-subtitle>
                         </v-list-item-content>
 
@@ -89,14 +77,6 @@
                 if(val != undefined) {
                     var arr = this.list[val]._links.self.href.split('/');
                     obj['locId'] = arr[4]; 
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
                     
                     
                     

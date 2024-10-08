@@ -12,22 +12,10 @@
                 <String label="CustomerId" v-model="item.customerId" :editMode="editMode" @change="change" />
             </div>
             <div>
-                <String label="FamilyId" v-model="item.familyId" :editMode="editMode" @change="change" />
+                <Number label="LocX" v-model="item.locX" :editMode="editMode" @change="change" />
             </div>
             <div>
-                <String label="Loc1" v-model="item.loc1" :editMode="editMode" @change="change" />
-            </div>
-            <div>
-                <String label="Loc2" v-model="item.loc2" :editMode="editMode" @change="change" />
-            </div>
-            <div>
-                <String label="Loc3" v-model="item.loc3" :editMode="editMode" @change="change" />
-            </div>
-            <div>
-                <String label="Loc4" v-model="item.loc4" :editMode="editMode" @change="change" />
-            </div>
-            <div>
-                <String label="Loc5" v-model="item.loc5" :editMode="editMode" @change="change" />
+                <Number label="LocY" v-model="item.locY" :editMode="editMode" @change="change" />
             </div>
         </v-card-text>
 

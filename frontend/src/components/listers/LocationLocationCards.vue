@@ -106,12 +106,8 @@
             me.newValue = {
                 'locId': '',
                 'customerId': '',
-                'familyId': '',
-                'loc1': '',
-                'loc2': '',
-                'loc3': '',
-                'loc4': '',
-                'loc5': '',
+                'locX': 0,
+                'locY': 0,
             }
         },
         methods:{

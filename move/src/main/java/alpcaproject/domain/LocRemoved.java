@@ -11,10 +11,6 @@ public class LocRemoved extends AbstractEvent {
 
     private String locId;
     private String customerId;
-    private String familyId;
-    private String loc1;
-    private String loc2;
-    private String loc3;
-    private String loc4;
-    private String loc5;
+    private Double locX;
+    private Double locY;
 }

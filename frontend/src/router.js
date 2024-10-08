@@ -17,6 +17,8 @@ import Manager from "./components/listers/Cards"
 import Detail from "./components/listers/Detail"
 
 
+import LocationLocationManager from "./components/listers/LocationLocationCards"
+import LocationLocationDetail from "./components/listers/LocationLocationDetail"
 
 
 export default new Router({
@@ -67,6 +69,16 @@ export default new Router({
             },
 
 
+            {
+                path: '/locations/locations',
+                name: 'LocationLocationManager',
+                component: LocationLocationManager
+            },
+            {
+                path: '/locations/locations/:id',
+                name: 'LocationLocationDetail',
+                component: LocationLocationDetail
+            },
 
 
 

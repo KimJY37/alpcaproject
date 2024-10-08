@@ -18,12 +18,8 @@
         <v-card-text style="background-color: white;">
             <String v-if="editMode" label="LocId" v-model="value.locId" :editMode="editMode" :inputUI="''"/>
             <String label="CustomerId" v-model="value.customerId" :editMode="editMode" :inputUI="''"/>
-            <String label="FamilyId" v-model="value.familyId" :editMode="editMode" :inputUI="''"/>
-            <String label="Loc1" v-model="value.loc1" :editMode="editMode" :inputUI="''"/>
-            <String label="Loc2" v-model="value.loc2" :editMode="editMode" :inputUI="''"/>
-            <String label="Loc3" v-model="value.loc3" :editMode="editMode" :inputUI="''"/>
-            <String label="Loc4" v-model="value.loc4" :editMode="editMode" :inputUI="''"/>
-            <String label="Loc5" v-model="value.loc5" :editMode="editMode" :inputUI="''"/>
+            <Number label="LocX" v-model="value.locX" :editMode="editMode" :inputUI="''"/>
+            <Number label="LocY" v-model="value.locY" :editMode="editMode" :inputUI="''"/>
         </v-card-text>
 
         <v-card-actions style="background-color: white;">

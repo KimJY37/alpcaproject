@@ -68,12 +68,8 @@
                 [
                     { text: "locId", value: "locId" },
                     { text: "customerId", value: "customerId" },
-                    { text: "familyId", value: "familyId" },
-                    { text: "loc1", value: "loc1" },
-                    { text: "loc2", value: "loc2" },
-                    { text: "loc3", value: "loc3" },
-                    { text: "loc4", value: "loc4" },
-                    { text: "loc5", value: "loc5" },
+                    { text: "locX", value: "locX" },
+                    { text: "locY", value: "locY" },
                 ],
             location : [],
             newValue: {},
@@ -93,12 +89,8 @@
             this.newValue = {
                 'locId': '',
                 'customerId': '',
-                'familyId': '',
-                'loc1': '',
-                'loc2': '',
-                'loc3': '',
-                'loc4': '',
-                'loc5': '',
+                'locX': 0,
+                'locY': 0,
             }
         },
         methods: {

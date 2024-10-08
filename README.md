@@ -52,6 +52,7 @@ mvn spring-boot:run
 ```
 - location
 ```
+ http :8088/locations locId="locId" customerId="customerId" locX="locX" locY="locY" 
 ```
 
 

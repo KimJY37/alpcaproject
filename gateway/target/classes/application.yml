@@ -28,7 +28,7 @@ spring:
         - id: location
           uri: http://localhost:0
           predicates:
-            - Path=, 
+            - Path=/locations/**, 
         - id: frontend
           uri: http://localhost:8080
           predicates:
@@ -72,7 +72,7 @@ spring:
         - id: location
           uri: http://location:8080
           predicates:
-            - Path=, 
+            - Path=/locations/**, 
         - id: frontend
           uri: http://frontend:8080
           predicates:

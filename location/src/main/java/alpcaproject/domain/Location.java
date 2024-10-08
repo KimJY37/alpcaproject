@@ -18,17 +18,9 @@ public class Location {
 
     private String customerId;
 
-    private String familyId;
+    private Double locX;
 
-    private String loc1;
-
-    private String loc2;
-
-    private String loc3;
-
-    private String loc4;
-
-    private String loc5;
+    private Double locY;
 
     public static LocationRepository repository() {
         LocationRepository locationRepository = LocationApplication.applicationContext.getBean(
