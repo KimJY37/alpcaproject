@@ -69,19 +69,19 @@ public class Move {
             move.setGoalLocX(locRegistered.getLocX());
             move.setGoalLocY(locRegistered.getLocY());
             repository().save(move);
-         });
+        });
+
     }
 
     //>>> Clean Arch / Port Method
     //<<< Clean Arch / Port Method
     public static void removeGoalLoc(LocRemoved locRemoved) {
+
         //implement business logic here: 목적지 삭제
         repository().findById(locRemoved.getLocId()).ifPresent(move->{
             repository().delete(move);
-         });
-
+        });
     }
-    //>>> Clean Arch / Port Method
 
 }
 //>>> DDD / Aggregate Root
