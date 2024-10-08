@@ -82,7 +82,6 @@ public class Move {
             repository().delete(move);
         });
     }
-    //>>> Clean Arch / Port Method
 
 }
 //>>> DDD / Aggregate Root

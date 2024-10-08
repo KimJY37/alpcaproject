@@ -24,7 +24,7 @@ spring:
         - id: alarm
           uri: http://localhost:0
           predicates:
-            - Path=/alarms/**, 
+            - Path=, 
         - id: location
           uri: http://localhost:0
           predicates:
@@ -68,7 +68,7 @@ spring:
         - id: alarm
           uri: http://alarm:8080
           predicates:
-            - Path=/alarms/**, 
+            - Path=, 
         - id: location
           uri: http://location:8080
           predicates:
