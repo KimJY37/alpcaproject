@@ -21,6 +21,7 @@
             <String label="FamilyId" v-model="value.familyId" :editMode="editMode" :inputUI="''"/>
             <String label="Content" v-model="value.content" :editMode="editMode" :inputUI="''"/>
             <String label="MoveStatus" v-model="value.moveStatus" :editMode="editMode" :inputUI="''"/>
+            <String label="MoveId" v-model="value.moveId" :editMode="editMode" :inputUI="''"/>
         </v-card-text>
 
         <v-card-actions style="background-color: white;">

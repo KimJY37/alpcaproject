@@ -71,6 +71,7 @@
                     { text: "familyId", value: "familyId" },
                     { text: "content", value: "content" },
                     { text: "moveStatus", value: "moveStatus" },
+                    { text: "moveId", value: "moveId" },
                 ],
             alarm : [],
             newValue: {},
@@ -93,6 +94,7 @@
                 'familyId': '',
                 'content': '',
                 'moveStatus': '',
+                'moveId': '',
             }
         },
         methods: {

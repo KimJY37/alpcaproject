@@ -109,6 +109,7 @@
                 'familyId': '',
                 'content': '',
                 'moveStatus': '',
+                'moveId': '',
             }
         },
         methods:{

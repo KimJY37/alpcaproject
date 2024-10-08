@@ -49,7 +49,7 @@ mvn spring-boot:run
 ```
 - alarm
 ```
- http :8088/alarms msgId="msgId" customerId="customerId" familyId="familyId" content="content" moveStatus="moveStatus" 
+ http :8088/alarms msgId="msgId" customerId="customerId" familyId="familyId" content="content" moveStatus="moveStatus" moveId="moveId" 
 ```
 - location
 ```
