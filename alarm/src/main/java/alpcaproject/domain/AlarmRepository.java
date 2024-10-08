@@ -6,5 +6,5 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 //<<< PoEAA / Repository
 @RepositoryRestResource(collectionResourceRel="alarms", path="alarms")
-public interface AlarmRepository extends PagingAndSortingRepository<Alarm, >{
+public interface AlarmRepository extends PagingAndSortingRepository<Alarm, String>{
 }
