@@ -64,49 +64,23 @@ public class Move {
 
     //<<< Clean Arch / Port Method
     public static void updateGoalLoc(LocRegistered locRegistered) {
-        //implement business logic here:
-
-        /** Example 1:  new item 
-        Move move = new Move();
-        repository().save(move);
-
-        */
-
-        /** Example 2:  finding and process
-        
-        repository().findById(locRegistered.get???()).ifPresent(move->{
-            
-            move // do something
+        //implement business logic here: 목적지 좌표 업데이트
+        repository().findById(locRegistered.getLocId()).ifPresent(move->{
+            move.setGoalLocX(locRegistered.getLocX());
+            move.setGoalLocY(locRegistered.getLocY());
             repository().save(move);
-
-
-         });
-        */
+        });
 
     }
 
     //>>> Clean Arch / Port Method
     //<<< Clean Arch / Port Method
     public static void removeGoalLoc(LocRemoved locRemoved) {
-        //implement business logic here:
 
-        /** Example 1:  new item 
-        Move move = new Move();
-        repository().save(move);
-
-        */
-
-        /** Example 2:  finding and process
-        
-        repository().findById(locRemoved.get???()).ifPresent(move->{
-            
-            move // do something
-            repository().save(move);
-
-
-         });
-        */
-
+        //implement business logic here: 목적지 삭제
+        repository().findById(locRemoved.getLocId()).ifPresent(move->{
+            repository().delete(move);
+        });
     }
     //>>> Clean Arch / Port Method
 
