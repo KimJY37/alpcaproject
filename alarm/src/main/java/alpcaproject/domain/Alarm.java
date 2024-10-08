@@ -46,6 +46,7 @@ public class Alarm {
         alarm.setContent("출발");
         alarm.setFamilyId(moveStarted.getFamilyId());
         alarm.setCustomerId(moveStarted.getCustomerId());
+        alarm.setMoveId(moveStarted.getMoveId());
         alarm.setMoveStatus("start");
         repository().save(alarm);
     }
@@ -54,37 +55,21 @@ public class Alarm {
     //<<< Clean Arch / Port Method
     public static void cancelAlarmMsg(MoveCancelled moveCancelled) {
         //implement business logic here: alarm의 moveStatus를 cancel로 변경
-        repository().findById(moveCancelled.getMoveId()).ifPresent(alarm->{
+        repository().findByMoveId(moveCancelled.getMoveId()).ifPresent(alarm->{
+            alarm.setMoveStatus("cancel");
             repository().save(alarm);
-
-
          });
-        */
-
     }
 
     //>>> Clean Arch / Port Method
     //<<< Clean Arch / Port Method
     public static void endAlarmMsg(MoveEnded moveEnded) {
-        //implement business logic here:
-
-        /** Example 1:  new item 
-        Alarm alarm = new Alarm();
-        repository().save(alarm);
-
-        */
-
-        /** Example 2:  finding and process
-        
-        repository().findById(moveEnded.get???()).ifPresent(alarm->{
-            
-            alarm // do something
+        //implement business logic here: alarm 수정
+        repository().findByMoveId(moveEnded.getMoveId()).ifPresent(alarm -> {
+            alarm.setMoveId("end");
+            alarm.setContent("도착");
             repository().save(alarm);
-
-
-         });
-        */
-
+        });
     }
     //>>> Clean Arch / Port Method
 
